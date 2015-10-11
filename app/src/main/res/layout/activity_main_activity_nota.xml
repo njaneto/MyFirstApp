@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityNota">
+
+    <EditText
+        android:id="@+id/ValorPrimeiraNota"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="Nota !"
+        android:textSize="18sp"
+        android:layout_x="106dp"
+        android:layout_y="73dp"
+        android:layout_alignBottom="@+id/primeiraNota"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ValorSegundaNota"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="Nota !"
+        android:textSize="18sp"
+        android:layout_x="106dp"
+        android:layout_y="73dp"
+        android:layout_alignBottom="@+id/segundaNota"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ValorEDNota"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="Nota !"
+        android:textSize="18sp"
+        android:layout_x="106dp"
+        android:layout_y="73dp"
+        android:layout_alignBottom="@+id/EDNota"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ValorU2Nota"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="Nota !"
+        android:textSize="18sp"
+        android:layout_x="106dp"
+        android:layout_y="73dp"
+        android:layout_alignBottom="@+id/U2Nota"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/ValorMedia"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_x="106dp"
+        android:layout_y="73dp"
+        android:layout_above="@+id/buttonMedia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:enabled="true"
+        android:visibility="visible" />
+
+    <TextView android:text="@string/primeiranota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/primeiraNota"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:text="@string/segundanota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/segundaNota"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/ValorPrimeiraNota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:text="ED Nota!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EDNota"
+        android:layout_below="@+id/segundaNota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
+
+    <TextView android:text="U2 Nota!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/U2Nota"
+        android:layout_below="@+id/EDNota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="71dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Media"
+        android:id="@+id/buttonMedia"
+        android:layout_alignRight="@+id/ValorMedia"
+        android:layout_alignEnd="@+id/ValorMedia"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ValorMedia"
+        android:layout_alignStart="@+id/ValorMedia"
+        android:nestedScrollingEnabled="true" />
+
+</RelativeLayout>
